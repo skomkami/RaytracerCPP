@@ -6,13 +6,12 @@ using namespace std;
 int main(int argc, char* argv[]) {
 	RayTracer rt;
 	const Vector3f campos(5, 5, -20);
-	const Vector3f look_at(0,1,0);
+	const Vector3f look_at(0,2,0);
 	rt.setCamera(campos, look_at);
 	rt.setBackground(Color(0, 0.7, 1, 0));
 	
 	Color white_light(1.0, 1.0, 1.0, 0);
 	Color green(0.5, 1.0, 0.5, 0);
-	Color maroon_special(0.5, 0.25, 0.25, 2);
 	Color orange(0.94, 0.75, 0.31, 0.4);
 
 	Vector3f light_position(-7, 10, -10);

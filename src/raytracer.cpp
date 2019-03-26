@@ -128,8 +128,8 @@ Color RayTracer::getColorAt(Vector3f intersection_position, Vector3f intersectin
 				if(secondary_intersections.at(c)>accuracy) {
 					if(secondary_intersections.at(c) <= distance_to_light_magnitude) {
 						shadowed = true;
-						break;
 					}
+					break;
 				}
 			}
 
